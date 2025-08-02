@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Quirk Tech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Quirk<span>Tech</span></h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Latest Insights</h1>
+            <p>Stay updated with the latest trends in technology, AI, and digital innovation</p>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="featured-article">
+        <div class="container">
+            <div class="featured-content">
+                <div class="featured-image">
+                    <img src="PHOTOS/alina-grubnyak-ZiQkhI7417A-unsplash.jpg" alt="AI Future">
+                    <div class="featured-badge">Featured</div>
+                </div>
+                <div class="featured-text">
+                    <div class="article-meta">
+                        <span class="category">AI Technology</span>
+                        <span class="date">December 15, 2024</span>
+                        <span class="read-time">8 min read</span>
+                    </div>
+                    <h2>The Future of AI in Business Automation: Trends to Watch in 2025</h2>
+                    <p>Artificial Intelligence is revolutionizing how businesses operate, from customer service to complex decision-making processes. In this comprehensive guide, we explore the emerging trends that will shape the AI landscape in 2025 and beyond.</p>
+                    <div class="article-tags">
+                        <span class="tag">AI</span>
+                        <span class="tag">Automation</span>
+                        <span class="tag">Business</span>
+                        <span class="tag">Technology</span>
+                    </div>
+                    <a href="#" class="btn btn-primary">Read Full Article</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="blog-categories">
+        <div class="container">
+            <div class="categories-filter">
+                <button class="category-btn active" data-category="all">All Posts</button>
+                <button class="category-btn" data-category="ai-technology">AI Technology</button>
+                <button class="category-btn" data-category="web-development">Web Development</button>
+                <button class="category-btn" data-category="mobile-apps">Mobile Apps</button>
+                <button class="category-btn" data-category="digital-marketing">Digital Marketing</button>
+                <button class="category-btn" data-category="tutorials">Tutorials</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="blog-grid-section">
+        <div class="container">
+            <div class="blog-grid-detailed">
+                <!-- AI Technology Posts -->
+                <article class="blog-card-detailed" data-category="ai-technology">
+                    <div class="blog-image">
+                        <img src="PHOTOS/markus-spiske-iar-afB0QQw-unsplash.jpg" alt="Machine Learning">
+                        <div class="blog-category-badge">AI Technology</div>
+                    </div>
+                    <div class="blog-content-detailed">
+                        <div class="blog-meta">
+                            <span class="blog-date">December 12, 2024</span>
+                            <span class="blog-read-time">6 min read</span>
+                        </div>
+                        <h3>Machine Learning Models: From Development to Production</h3>
+                        <p>Learn how to successfully deploy machine learning models in production environments, including best practices for monitoring, scaling, and maintaining AI systems.</p>
+                        <div class="blog-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">DevOps</span>
+                        </div>
+                        <div class="blog-footer">
+                            <div class="author-info">
+                                <img src="PHOTOS/pexels-joshsorenson-1054397.jpg" alt="Author">
+                                <span>By John Smith</span>
+                            </div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Web Development Posts -->
+                <article class="blog-card-detailed" data-category="web-development">
+                    <div class="blog-image">
+                        <img src="PHOTOS/luca-bravo-XJXWbfSo2f0-unsplash.jpg" alt="Web Development">
+                        <div class="blog-category-badge">Web Development</div>
+                    </div>
+                    <div class="blog-content-detailed">
+                        <div class="blog-meta">
+                            <span class="blog-date">December 10, 2024</span>
+                            <span class="blog-read-time">5 min read</span>
+                        </div>
+                        <h3>Modern Web Development Trends: What's Hot in 2024</h3>
+                        <p>Explore the latest web development trends including JAMstack, serverless architecture, and progressive web apps that are shaping the future of web development.</p>
+                        <div class="blog-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">JAMstack</span>
+                            <span class="tag">PWA</span>
+                        </div>
+                        <div class="blog-footer">
+                            <div class="author-info">
+                                <img src="PHOTOS/pexels-divinetechygirl-1181326.jpg" alt="Author">
+                                <span>By Sarah Johnson</span>
+                            </div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Mobile Apps Posts -->
+                <article class="blog-card-detailed" data-category="mobile-apps">
+                    <div class="blog-image">
+                        <img src="PHOTOS/alex-knight-2EJCSULRwC8-unsplash.jpg" alt="Mobile Development">
+                        <div class="blog-category-badge">Mobile Apps</div>
+                    </div>
+                    <div class="blog-content-detailed">
+                        <div class="blog-meta">
+                            <span class="blog-date">December 8, 2024</span>
+                            <span class="blog-read-time">7 min read</span>
+                        </div>
+                        <h3>Cross-Platform Mobile Development: React Native vs Flutter</h3>
+                        <p>A comprehensive comparison of React Native and Flutter for cross-platform mobile development, including performance, development experience, and ecosystem.</p>
+                        <div class="blog-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Mobile</span>
+                        </div>
+                        <div class="blog-footer">
+                            <div class="author-info">
+                                <img src="PHOTOS/pexels-rahulp9800-1933900.jpg" alt="Author">
+                                <span>By Michael Chen</span>
+                            </div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Digital Marketing Posts -->
+                <article class="blog-card-detailed" data-category="digital-marketing">
+                    <div class="blog-image">
+                        <img src="PHOTOS/pexels-divinetechygirl-1181326.jpg" alt="Digital Marketing">
+                        <div class="blog-category-badge">Digital Marketing</div>
+                    </div>
+                    <div class="blog-content-detailed">
+                        <div class="blog-meta">
+                            <span class="blog-date">December 5, 2024</span>
+                            <span class="blog-read-time">4 min read</span>
+                        </div>
+                        <h3>Data-Driven Marketing: Leveraging Analytics for Better ROI</h3>
+                        <p>Discover how to use data analytics to optimize your marketing campaigns, improve customer targeting, and maximize return on investment in digital marketing.</p>
+                        <div class="blog-tags">
+                            <span class="tag">Analytics</span>
+                            <span class="tag">ROI</span>
+                            <span class="tag">Marketing</span>
+                        </div>
+                        <div class="blog-footer">
+                            <div class="author-info">
+                                <img src="PHOTOS/kaitlyn-baker-vZJdYl5JVXY-unsplash.jpg" alt="Author">
+                                <span>By Emily Davis</span>
+                            </div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tutorial Posts -->
+                <article class="blog-card-detailed" data-category="tutorials">
+                    <div class="blog-image">
+                        <img src="PHOTOS/christopher-gower-m_HRfLhgABo-unsplash.jpg" alt="Tutorial">
+                        <div class="blog-category-badge">Tutorials</div>
+                    </div>
+                    <div class="blog-content-detailed">
+                        <div class="blog-meta">
+                            <span class="blog-date">December 3, 2024</span>
+                            <span class="blog-read-time">10 min read</span>
+                        </div>
+                        <h3>Building Your First AI Chatbot: A Step-by-Step Guide</h3>
+                        <p>Learn how to create an intelligent chatbot from scratch using Python and natural language processing libraries. Perfect for beginners and intermediate developers.</p>
+                        <div class="blog-tags">
+                            <span class="tag">Tutorial</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Chatbot</span>
+                        </div>
+                        <div class="blog-footer">
+                            <div class="author-info">
+                                <img src="PHOTOS/pexels-joshsorenson-1054397.jpg" alt="Author">
+                                <span>By John Smith</span>
+                            </div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- More Posts -->
+                <article class="blog-card-detailed" data-category="web-development">
+                    <div class="blog-image">
+                        <img src="PHOTOS/pexels-thisisengineering-3861958.jpg" alt="API Development">
+                        <div class="blog-category-badge">Web Development</div>
+                    </div>
+                    <div class="blog-content-detailed">
+                        <div class="blog-meta">
+                            <span class="blog-date">December 1, 2024</span>
+                            <span class="blog-read-time">6 min read</span>
+                        </div>
+                        <h3>RESTful API Design: Best Practices and Common Pitfalls</h3>
+                        <p>Master the art of designing robust and scalable RESTful APIs with these proven best practices and learn how to avoid common mistakes that can hurt performance.</p>
+                        <div class="blog-tags">
+                            <span class="tag">API</span>
+                            <span class="tag">REST</span>
+                            <span class="tag">Backend</span>
+                        </div>
+                        <div class="blog-footer">
+                            <div class="author-info">
+                                <img src="PHOTOS/pexels-rahulp9800-1933900.jpg" alt="Author">
+                                <span>By Michael Chen</span>
+                            </div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-section">
+                <button class="btn btn-secondary" id="load-more">Load More Articles</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Stay Updated</h2>
+                    <p>Subscribe to our newsletter and get the latest insights on technology, AI, and digital innovation delivered to your inbox.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quirk<span>Tech</span></h3>
+                    <p>Transforming businesses with innovative digital solutions worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Mobile Apps</a></li>
+                        <li><a href="services.html">AI Automation</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> +254111546120</p>
+                    <p><i class="fas fa-envelope"></i> info@quirktech.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Worldwide Service</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Quirk Tech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/254111546120" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- AI Assistant -->
+    <div class="ai-assistant" id="ai-assistant">
+        <div class="ai-toggle" id="ai-toggle">
+            <i class="fas fa-robot"></i>
+        </div>
+        <div class="ai-chat" id="ai-chat">
+            <div class="ai-header">
+                <h4>Quirk AI</h4>
+                <button class="ai-close" id="ai-close">&times;</button>
+            </div>
+            <div class="ai-messages" id="ai-messages">
+                <div class="ai-message">
+                    <p>Hi, I am Quirk AI, how can I help you today?</p>
+                </div>
+            </div>
+            <div class="ai-input">
+                <input type="text" id="ai-input-field" placeholder="Type your message...">
+                <button id="ai-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Blog Category Filter
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+                
+                const category = btn.getAttribute('data-category');
+                const articles = document.querySelectorAll('.blog-card-detailed');
+                
+                articles.forEach(article => {
+                    if (category === 'all' || article.getAttribute('data-category') === category) {
+                        gsap.to(article, { duration: 0.5, opacity: 1, scale: 1, display: 'block' });
+                    } else {
+                        gsap.to(article, { duration: 0.5, opacity: 0, scale: 0.8, display: 'none' });
+                    }
+                });
+            });
+        });
+
+        // Newsletter Form
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            alert('Thank you for subscribing! You\'ll receive our latest updates at ' + email);
+            this.reset();
+        });
+
+        // Load More Functionality
+        document.getElementById('load-more').addEventListener('click', function() {
+            this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
+            
+            // Simulate loading more articles
+            setTimeout(() => {
+                alert('More articles loaded! (This is a demo)');
+                this.innerHTML = 'Load More Articles';
+            }, 2000);
+        });
+    </script>
+    <style>
+        .featured-article {
+            padding: 50px 0;
+            background: var(--bg-secondary);
+        }
+
+        .featured-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .featured-image {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .featured-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .featured-badge {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: var(--accent-color);
+            color: var(--primary-color);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .featured-text h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            line-height: 1.3;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .article-meta .category {
+            background: var(--secondary-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .article-meta .date,
+        .article-meta .read-time {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .article-tags {
+            display: flex;
+            gap: 0.5rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+
+        .blog-categories {
+            padding: 50px 0;
+            background: var(--bg-primary);
+        }
+
+        .categories-filter {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .category-btn {
+            padding: 10px 25px;
+            background: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            border-radius: 50px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+        }
+
+        .category-btn.active,
+        .category-btn:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .blog-grid-section {
+            padding: 50px 0 100px;
+        }
+
+        .blog-grid-detailed {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+        }
+
+        .blog-card-detailed {
+            background: var(--bg-primary);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px var(--shadow);
+            transition: var(--transition);
+        }
+
+        .blog-card-detailed:hover {
+            transform: translateY(-10px);
+        }
+
+        .blog-image {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .blog-image img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .blog-card-detailed:hover .blog-image img {
+            transform: scale(1.1);
+        }
+
+        .blog-category-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: var(--secondary-color);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .blog-content-detailed {
+            padding: 2rem;
+        }
+
+        .blog-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .blog-content-detailed h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            line-height: 1.4;
+        }
+
+        .blog-content-detailed p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .blog-tags {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .blog-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .author-info {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .author-info img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .author-info span {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .read-more {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: var(--transition);
+        }
+
+        .read-more:hover {
+            color: var(--accent-color);
+        }
+
+        .load-more-section {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .newsletter-section {
+            padding: 80px 0;
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .newsletter-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .newsletter-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .newsletter-text p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            background: white;
+            color: var(--primary-color);
+        }
+
+        .newsletter-form input:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .featured-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .featured-text h2 {
+                font-size: 1.5rem;
+            }
+
+            .blog-grid-detailed {
+                grid-template-columns: 1fr;
+            }
+
+            .newsletter-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                text-align: center;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+
+            .categories-filter {
+                justify-content: center;
+            }
+        }
+    </style>
+</body>
+</html>

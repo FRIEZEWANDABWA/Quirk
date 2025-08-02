@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quirk Tech - Digital Innovation Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Quirk<span>Tech</span></h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Digital Innovation <span class="gradient-text">Redefined</span></h1>
+                <p class="hero-subtitle">Transforming businesses worldwide with cutting-edge technology solutions, AI automation, and digital excellence.</p>
+                <div class="hero-buttons">
+                    <a href="services.html" class="btn btn-primary">Explore Services</a>
+                    <a href="contact.html" class="btn btn-secondary">Get Started</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-elements">
+                    <div class="float-item" data-speed="2">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="float-item" data-speed="3">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="float-item" data-speed="1.5">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="float-item" data-speed="2.5">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-preview">
+        <div class="container">
+            <h2 class="section-title">Our Core Services</h2>
+            <div class="services-grid">
+                <div class="service-card" data-service="web-dev">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Website Design & Development</h3>
+                    <p>Modern, responsive websites that drive results</p>
+                    <a href="services.html#web-dev" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-service="mobile-dev">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile & Web App Development</h3>
+                    <p>Cross-platform applications for every device</p>
+                    <a href="services.html#mobile-dev" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-service="ai-automation">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI Automation Services</h3>
+                    <p>Streamline operations with intelligent automation</p>
+                    <a href="services.html#ai-automation" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-service="digital-marketing">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>Data-driven strategies that boost your reach</p>
+                    <a href="services.html#digital-marketing" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-service="training">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>AI Tools Training & Workshops</h3>
+                    <p>Empower your team with AI knowledge</p>
+                    <a href="services.html#training" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Preview -->
+    <section class="portfolio-preview">
+        <div class="container">
+            <h2 class="section-title">Featured Work</h2>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="web-design">Web Design</button>
+                <button class="filter-btn" data-filter="mobile-apps">Mobile Apps</button>
+                <button class="filter-btn" data-filter="ai-solutions">AI Solutions</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web-design">
+                    <img src="PHOTOS/christopher-gower-m_HRfLhgABo-unsplash.jpg" alt="Web Design Project">
+                    <div class="portfolio-overlay">
+                        <h4>E-commerce Platform</h4>
+                        <p>Modern online store with AI recommendations</p>
+                        <a href="portfolio.html" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile-apps">
+                    <img src="PHOTOS/alex-knight-2EJCSULRwC8-unsplash.jpg" alt="Mobile App Project">
+                    <div class="portfolio-overlay">
+                        <h4>Fitness Tracking App</h4>
+                        <p>Cross-platform health and wellness solution</p>
+                        <a href="portfolio.html" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="ai-solutions">
+                    <img src="PHOTOS/alina-grubnyak-ZiQkhI7417A-unsplash.jpg" alt="AI Solution Project">
+                    <div class="portfolio-overlay">
+                        <h4>Customer Service Bot</h4>
+                        <p>AI-powered support automation system</p>
+                        <a href="portfolio.html" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Let's Build Something Amazing</h2>
+                <p>Ready to transform your digital presence? Let's discuss your project.</p>
+                <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+            </div>
+            <div class="cta-image">
+                <img src="PHOTOS/pexels-thisisengineering-3861958.jpg" alt="Team collaboration">
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Insights -->
+    <section class="blog-preview">
+        <div class="container">
+            <h2 class="section-title">Latest Insights</h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <img src="PHOTOS/markus-spiske-iar-afB0QQw-unsplash.jpg" alt="AI Trends">
+                    <div class="blog-content">
+                        <span class="blog-category">AI Technology</span>
+                        <h3>The Future of AI in Business Automation</h3>
+                        <p>Discover how AI is revolutionizing business processes...</p>
+                        <a href="blog.html" class="blog-link">Read More</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <img src="PHOTOS/luca-bravo-XJXWbfSo2f0-unsplash.jpg" alt="Web Development">
+                    <div class="blog-content">
+                        <span class="blog-category">Web Development</span>
+                        <h3>Modern Web Development Trends 2024</h3>
+                        <p>Stay ahead with the latest web development practices...</p>
+                        <a href="blog.html" class="blog-link">Read More</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <img src="PHOTOS/pexels-divinetechygirl-1181326.jpg" alt="Digital Marketing">
+                    <div class="blog-content">
+                        <span class="blog-category">Digital Marketing</span>
+                        <h3>Data-Driven Marketing Strategies</h3>
+                        <p>Learn how to leverage data for better marketing results...</p>
+                        <a href="blog.html" class="blog-link">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quirk<span>Tech</span></h3>
+                    <p>Transforming businesses with innovative digital solutions worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Mobile Apps</a></li>
+                        <li><a href="services.html">AI Automation</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> +254111546120</p>
+                    <p><i class="fas fa-envelope"></i> info@quirktech.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Worldwide Service</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Quirk Tech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/254111546120" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- AI Assistant -->
+    <div class="ai-assistant" id="ai-assistant">
+        <div class="ai-toggle" id="ai-toggle">
+            <i class="fas fa-robot"></i>
+        </div>
+        <div class="ai-chat" id="ai-chat">
+            <div class="ai-header">
+                <h4>Quirk AI</h4>
+                <button class="ai-close" id="ai-close">&times;</button>
+            </div>
+            <div class="ai-messages" id="ai-messages">
+                <div class="ai-message">
+                    <p>Hi, I am Quirk AI, how can I help you today?</p>
+                </div>
+            </div>
+            <div class="ai-input">
+                <input type="text" id="ai-input-field" placeholder="Type your message...">
+                <button id="ai-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

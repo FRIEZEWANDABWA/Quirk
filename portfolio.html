@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Quirk Tech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Quirk<span>Tech</span></h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Our Portfolio</h1>
+            <p>Showcasing our best work and successful client projects</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="web-design">Web Design</button>
+                <button class="filter-btn" data-filter="mobile-apps">Mobile Apps</button>
+                <button class="filter-btn" data-filter="ai-solutions">AI Solutions</button>
+                <button class="filter-btn" data-filter="digital-marketing">Digital Marketing</button>
+                <button class="filter-btn" data-filter="all">All Projects</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid-detailed">
+                <!-- Web Design Projects -->
+                <div class="portfolio-item-detailed" data-category="web-design">
+                    <div class="portfolio-image">
+                        <img src="PHOTOS/christopher-gower-m_HRfLhgABo-unsplash.jpg" alt="E-commerce Platform">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Modern E-commerce Platform</h3>
+                                <p>Full-stack e-commerce solution with AI-powered recommendations</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag">MongoDB</span>
+                                </div>
+                                <div class="portfolio-buttons">
+                                    <a href="#" class="btn-portfolio">View Live</a>
+                                    <a href="#" class="btn-portfolio">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-detailed" data-category="web-design">
+                    <div class="portfolio-image">
+                        <img src="PHOTOS/luca-bravo-XJXWbfSo2f0-unsplash.jpg" alt="Corporate Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Corporate Business Website</h3>
+                                <p>Professional corporate website with CMS integration</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">WordPress</span>
+                                    <span class="tag">PHP</span>
+                                    <span class="tag">MySQL</span>
+                                </div>
+                                <div class="portfolio-buttons">
+                                    <a href="#" class="btn-portfolio">View Live</a>
+                                    <a href="#" class="btn-portfolio">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-detailed" data-category="web-design">
+                    <div class="portfolio-image">
+                        <img src="PHOTOS/pexels-luis-gomes-166706-546819.jpg" alt="Restaurant Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Restaurant Chain Website</h3>
+                                <p>Multi-location restaurant website with online ordering</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">Vue.js</span>
+                                    <span class="tag">Laravel</span>
+                                    <span class="tag">Stripe</span>
+                                </div>
+                                <div class="portfolio-buttons">
+                                    <a href="#" class="btn-portfolio">View Live</a>
+                                    <a href="#" class="btn-portfolio">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Apps -->
+                <div class="portfolio-item-detailed" data-category="mobile-apps">
+                    <div class="portfolio-image">
+                        <img src="PHOTOS/alex-knight-2EJCSULRwC8-unsplash.jpg" alt="Fitness App">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Fitness Tracking App</h3>
+                                <p>Cross-platform fitness app with AI workout recommendations</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">React Native</span>
+                                    <span class="tag">Firebase</span>
+                                    <span class="tag">TensorFlow</span>
+                                </div>
+                                <div class="portfolio-buttons">
+                                    <a href="#" class="btn-portfolio">App Store</a>
+                                    <a href="#" class="btn-portfolio">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-detailed" data-category="mobile-apps">
+                    <div class="portfolio-image">
+                        <img src="PHOTOS/pexels-pixabay-60504.jpg" alt="Banking App">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Digital Banking App</h3>
+                                <p>Secure mobile banking solution with biometric authentication</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">Flutter</span>
+                                    <span class="tag">Dart</span>
+                                    <span class="tag">AWS</span>
+                                </div>
+                                <div class="portfolio-buttons">
+                                    <a href="#" class="btn-portfolio">View Demo</a>
+                                    <a href="#" class="btn-portfolio">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Solutions -->
+                <div class="portfolio-item-detailed" data-category="ai-solutions">
+                    <div class="portfolio-image">
+                        <img src="PHOTOS/alina-grubnyak-ZiQkhI7417A-unsplash.jpg" alt="AI Chatbot">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Customer Service AI Bot</h3>
+                                <p>Intelligent chatbot with natural language processing</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">TensorFlow</span>
+                                    <span class="tag">NLP</span>
+                                </div>
+                                <div class="portfolio-buttons">
+                                    <a href="#" class="btn-portfolio">Try Demo</a>
+                                    <a href="#" class="btn-portfolio">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-detailed" data-category="ai-solutions">
+                    <div class="portfolio-image">
+                        <img src="PHOTOS/markus-spiske-iar-afB0QQw-unsplash.jpg" alt="Data Analytics">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Predictive Analytics Platform</h3>
+                                <p>Machine learning platform for business intelligence</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">Scikit-learn</span>
+                                    <span class="tag">Docker</span>
+                                </div>
+                                <div class="portfolio-buttons">
+                                    <a href="#" class="btn-portfolio">View Demo</a>
+                                    <a href="#" class="btn-portfolio">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Digital Marketing -->
+                <div class="portfolio-item-detailed" data-category="digital-marketing">
+                    <div class="portfolio-image">
+                        <img src="PHOTOS/pexels-divinetechygirl-1181326.jpg" alt="Marketing Campaign">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Tech Startup Campaign</h3>
+                                <p>Complete digital marketing campaign with 300% ROI increase</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">SEO</span>
+                                    <span class="tag">PPC</span>
+                                    <span class="tag">Social Media</span>
+                                </div>
+                                <div class="portfolio-buttons">
+                                    <a href="#" class="btn-portfolio">View Results</a>
+                                    <a href="#" class="btn-portfolio">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-detailed" data-category="digital-marketing">
+                    <div class="portfolio-image">
+                        <img src="PHOTOS/pexels-tara-winstead-8849295.jpg" alt="Brand Strategy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>E-commerce Brand Strategy</h3>
+                                <p>Complete brand overhaul and digital presence optimization</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">Branding</span>
+                                    <span class="tag">Content</span>
+                                    <span class="tag">Analytics</span>
+                                </div>
+                                <div class="portfolio-buttons">
+                                    <a href="#" class="btn-portfolio">View Results</a>
+                                    <a href="#" class="btn-portfolio">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Quirk Tech transformed our online presence completely. Their team delivered beyond our expectations with a modern, user-friendly website that increased our conversions by 250%."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="PHOTOS/pexels-joshsorenson-1054397.jpg" alt="Client">
+                        <div class="author-info">
+                            <h4>John Anderson</h4>
+                            <span>CEO, TechStart Inc.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The mobile app they developed for us has been a game-changer. The AI features work flawlessly, and our users love the intuitive interface. Highly recommended!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="PHOTOS/kaitlyn-baker-vZJdYl5JVXY-unsplash.jpg" alt="Client">
+                        <div class="author-info">
+                            <h4>Sarah Mitchell</h4>
+                            <span>Founder, FitLife App</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Their AI automation solution saved us countless hours and significantly reduced operational costs. The team was professional, responsive, and delivered on time."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="PHOTOS/pexels-rahulp9800-1933900.jpg" alt="Client">
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <span>Operations Director, Global Corp</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Let's create something amazing together. Contact us to discuss your next digital solution.</p>
+                <a href="contact.html" class="btn btn-primary">Get Started Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quirk<span>Tech</span></h3>
+                    <p>Transforming businesses with innovative digital solutions worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Mobile Apps</a></li>
+                        <li><a href="services.html">AI Automation</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> +254111546120</p>
+                    <p><i class="fas fa-envelope"></i> info@quirktech.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Worldwide Service</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Quirk Tech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/254111546120" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- AI Assistant -->
+    <div class="ai-assistant" id="ai-assistant">
+        <div class="ai-toggle" id="ai-toggle">
+            <i class="fas fa-robot"></i>
+        </div>
+        <div class="ai-chat" id="ai-chat">
+            <div class="ai-header">
+                <h4>Quirk AI</h4>
+                <button class="ai-close" id="ai-close">&times;</button>
+            </div>
+            <div class="ai-messages" id="ai-messages">
+                <div class="ai-message">
+                    <p>Hi, I am Quirk AI, how can I help you today?</p>
+                </div>
+            </div>
+            <div class="ai-input">
+                <input type="text" id="ai-input-field" placeholder="Type your message...">
+                <button id="ai-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <style>
+        .portfolio-section {
+            padding: 100px 0;
+        }
+
+        .portfolio-grid-detailed {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .portfolio-item-detailed {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: var(--transition);
+            background: var(--bg-primary);
+            box-shadow: 0 10px 30px var(--shadow);
+        }
+
+        .portfolio-item-detailed:hover {
+            transform: translateY(-10px);
+        }
+
+        .portfolio-image {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .portfolio-image img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .portfolio-item-detailed:hover .portfolio-image img {
+            transform: scale(1.1);
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(10, 26, 58, 0.95), rgba(30, 144, 255, 0.95));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: var(--transition);
+            padding: 2rem;
+        }
+
+        .portfolio-item-detailed:hover .portfolio-overlay {
+            opacity: 1;
+        }
+
+        .portfolio-info {
+            text-align: center;
+            color: white;
+        }
+
+        .portfolio-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .portfolio-info p {
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+
+        .portfolio-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .tag {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .portfolio-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .btn-portfolio {
+            padding: 8px 20px;
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: var(--transition);
+            font-size: 0.9rem;
+        }
+
+        .btn-portfolio:hover {
+            background: white;
+            color: var(--primary-color);
+        }
+
+        .testimonials-section {
+            padding: 100px 0;
+            background: var(--bg-secondary);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background: var(--bg-primary);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px var(--shadow);
+            transition: var(--transition);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stars {
+            color: #FFD700;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-content p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .testimonial-author img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .author-info h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.25rem;
+        }
+
+        .author-info span {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-grid-detailed {
+                grid-template-columns: 1fr;
+            }
+
+            .portfolio-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>

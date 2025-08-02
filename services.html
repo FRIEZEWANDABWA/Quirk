@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Quirk Tech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Quirk<span>Tech</span></h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link active">Services</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Comprehensive digital solutions to transform your business</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-detailed">
+        <div class="container">
+            <!-- Web Development -->
+            <div class="service-detail" id="web-dev">
+                <div class="service-content">
+                    <div class="service-text">
+                        <div class="service-icon-large">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h2>Website Design & Development</h2>
+                        <p>Create stunning, responsive websites that captivate your audience and drive business growth. Our expert team combines cutting-edge design with robust functionality.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Responsive Design</li>
+                            <li><i class="fas fa-check"></i> SEO Optimization</li>
+                            <li><i class="fas fa-check"></i> Fast Loading Speed</li>
+                            <li><i class="fas fa-check"></i> Custom CMS</li>
+                            <li><i class="fas fa-check"></i> E-commerce Integration</li>
+                        </ul>
+                        <div class="service-buttons">
+                            <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+                            <a href="portfolio.html" class="btn btn-secondary">View Portfolio</a>
+                        </div>
+                    </div>
+                    <div class="service-image">
+                        <img src="PHOTOS/christopher-gower-m_HRfLhgABo-unsplash.jpg" alt="Web Development">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Development -->
+            <div class="service-detail" id="mobile-dev">
+                <div class="service-content reverse">
+                    <div class="service-text">
+                        <div class="service-icon-large">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h2>Mobile & Web App Development</h2>
+                        <p>Build powerful, user-friendly mobile and web applications that work seamlessly across all platforms and devices.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Cross-Platform Development</li>
+                            <li><i class="fas fa-check"></i> Native Performance</li>
+                            <li><i class="fas fa-check"></i> Cloud Integration</li>
+                            <li><i class="fas fa-check"></i> Real-time Features</li>
+                            <li><i class="fas fa-check"></i> App Store Deployment</li>
+                        </ul>
+                        <div class="service-buttons">
+                            <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+                            <a href="portfolio.html" class="btn btn-secondary">View Apps</a>
+                        </div>
+                    </div>
+                    <div class="service-image">
+                        <img src="PHOTOS/alex-knight-2EJCSULRwC8-unsplash.jpg" alt="Mobile Development">
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Automation -->
+            <div class="service-detail" id="ai-automation">
+                <div class="service-content">
+                    <div class="service-text">
+                        <div class="service-icon-large">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h2>AI Automation Services</h2>
+                        <p>Streamline your business operations with intelligent automation solutions that reduce costs and improve efficiency.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Process Automation</li>
+                            <li><i class="fas fa-check"></i> Chatbot Development</li>
+                            <li><i class="fas fa-check"></i> Data Analysis</li>
+                            <li><i class="fas fa-check"></i> Machine Learning</li>
+                            <li><i class="fas fa-check"></i> Custom AI Solutions</li>
+                        </ul>
+                        <div class="service-buttons">
+                            <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+                            <a href="#" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="service-image">
+                        <img src="PHOTOS/alina-grubnyak-ZiQkhI7417A-unsplash.jpg" alt="AI Automation">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Digital Marketing -->
+            <div class="service-detail" id="digital-marketing">
+                <div class="service-content reverse">
+                    <div class="service-text">
+                        <div class="service-icon-large">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h2>Digital Marketing</h2>
+                        <p>Boost your online presence and reach your target audience with data-driven marketing strategies that deliver results.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> SEO & SEM</li>
+                            <li><i class="fas fa-check"></i> Social Media Marketing</li>
+                            <li><i class="fas fa-check"></i> Content Marketing</li>
+                            <li><i class="fas fa-check"></i> Email Campaigns</li>
+                            <li><i class="fas fa-check"></i> Analytics & Reporting</li>
+                        </ul>
+                        <div class="service-buttons">
+                            <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+                            <a href="#" class="btn btn-secondary">View Results</a>
+                        </div>
+                    </div>
+                    <div class="service-image">
+                        <img src="PHOTOS/pexels-divinetechygirl-1181326.jpg" alt="Digital Marketing">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Training -->
+            <div class="service-detail" id="training">
+                <div class="service-content">
+                    <div class="service-text">
+                        <div class="service-icon-large">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h2>AI Tools Training & Workshops</h2>
+                        <p>Empower your team with comprehensive training on the latest AI tools and technologies to stay ahead in the digital age.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Hands-on Workshops</li>
+                            <li><i class="fas fa-check"></i> Custom Training Programs</li>
+                            <li><i class="fas fa-check"></i> Certification Courses</li>
+                            <li><i class="fas fa-check"></i> Online & In-person</li>
+                            <li><i class="fas fa-check"></i> Ongoing Support</li>
+                        </ul>
+                        <div class="service-buttons">
+                            <a href="contact.html" class="btn btn-primary">Book Training</a>
+                            <a href="#" class="btn btn-secondary">View Courses</a>
+                        </div>
+                    </div>
+                    <div class="service-image">
+                        <img src="PHOTOS/pexels-thisisengineering-3861958.jpg" alt="Training">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services -->
+    <section class="additional-services">
+        <div class="container">
+            <h2 class="section-title">Additional Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Virtual Assistance</h3>
+                    <p>Professional virtual assistance services to help manage your business operations efficiently.</p>
+                    <a href="contact.html" class="service-link">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h3>Content Writing</h3>
+                    <p>High-quality content creation for websites, blogs, marketing materials, and more.</p>
+                    <a href="contact.html" class="service-link">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Design Services</h3>
+                    <p>Creative design solutions including logos, branding, graphics, and visual identity.</p>
+                    <a href="contact.html" class="service-link">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3>Social Media Management</h3>
+                    <p>Complete social media management to build your brand and engage with your audience.</p>
+                    <a href="contact.html" class="service-link">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-life-ring"></i>
+                    </div>
+                    <h3>Customer Support</h3>
+                    <p>24/7 customer support services to ensure your clients receive the best experience.</p>
+                    <a href="contact.html" class="service-link">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3>Transcription Services</h3>
+                    <p>Accurate and fast transcription services for audio and video content.</p>
+                    <a href="contact.html" class="service-link">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Get Started?</h2>
+                <p>Let's discuss your project and create something amazing together.</p>
+                <a href="contact.html" class="btn btn-primary">Contact Us Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quirk<span>Tech</span></h3>
+                    <p>Transforming businesses with innovative digital solutions worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#web-dev">Web Development</a></li>
+                        <li><a href="#mobile-dev">Mobile Apps</a></li>
+                        <li><a href="#ai-automation">AI Automation</a></li>
+                        <li><a href="#digital-marketing">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> +254111546120</p>
+                    <p><i class="fas fa-envelope"></i> info@quirktech.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Worldwide Service</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Quirk Tech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/254111546120" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- AI Assistant -->
+    <div class="ai-assistant" id="ai-assistant">
+        <div class="ai-toggle" id="ai-toggle">
+            <i class="fas fa-robot"></i>
+        </div>
+        <div class="ai-chat" id="ai-chat">
+            <div class="ai-header">
+                <h4>Quirk AI</h4>
+                <button class="ai-close" id="ai-close">&times;</button>
+            </div>
+            <div class="ai-messages" id="ai-messages">
+                <div class="ai-message">
+                    <p>Hi, I am Quirk AI, how can I help you today?</p>
+                </div>
+            </div>
+            <div class="ai-input">
+                <input type="text" id="ai-input-field" placeholder="Type your message...">
+                <button id="ai-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <style>
+        .page-hero {
+            padding: 150px 0 100px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .services-detailed {
+            padding: 100px 0;
+        }
+
+        .service-detail {
+            margin-bottom: 100px;
+        }
+
+        .service-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .service-content.reverse {
+            direction: rtl;
+        }
+
+        .service-content.reverse > * {
+            direction: ltr;
+        }
+
+        .service-icon-large {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .service-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .service-text p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .service-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .service-features li {
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .service-features i {
+            color: var(--accent-color);
+        }
+
+        .service-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .service-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .additional-services {
+            padding: 100px 0;
+            background: var(--bg-secondary);
+        }
+
+        .nav-link.active {
+            color: var(--secondary-color);
+        }
+
+        @media (max-width: 768px) {
+            .service-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .service-content.reverse {
+                direction: ltr;
+            }
+
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+
+            .service-text h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</body>
+</html>
