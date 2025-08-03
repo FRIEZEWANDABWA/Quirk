@@ -156,94 +156,61 @@ document.querySelectorAll('.service-card').forEach(card => {
     });
 });
 
-// Three.js Background Animation
-function initThreeJSBackground() {
-    const canvas = document.getElementById('hero-canvas');
-    if (!canvas) return;
-    
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, canvas.offsetWidth / canvas.offsetHeight, 0.1, 1000);
-    const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
-    
-    renderer.setSize(canvas.offsetWidth, canvas.offsetHeight);
-    renderer.setClearColor(0x000000, 0);
-    
-    // Create particles
-    const particlesGeometry = new THREE.BufferGeometry();
-    const particlesCount = 100;
-    const posArray = new Float32Array(particlesCount * 3);
-    
-    for (let i = 0; i < particlesCount * 3; i++) {
-        posArray[i] = (Math.random() - 0.5) * 10;
-    }
-    
-    particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
-    
-    const particlesMaterial = new THREE.PointsMaterial({
-        size: 0.05,
-        color: 0x1E90FF,
-        transparent: true,
-        opacity: 0.8
-    });
-    
-    const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
-    scene.add(particlesMesh);
-    
-    // Create geometric shapes
-    const shapes = [];
-    for (let i = 0; i < 5; i++) {
-        const geometry = new THREE.BoxGeometry(0.2, 0.2, 0.2);
-        const material = new THREE.MeshBasicMaterial({ 
-            color: i % 2 === 0 ? 0x1E90FF : 0x00F5FF,
-            transparent: true,
-            opacity: 0.6,
-            wireframe: true
-        });
-        const cube = new THREE.Mesh(geometry, material);
-        cube.position.set(
-            (Math.random() - 0.5) * 8,
-            (Math.random() - 0.5) * 6,
-            (Math.random() - 0.5) * 4
-        );
-        shapes.push(cube);
-        scene.add(cube);
-    }
-    
-    camera.position.z = 5;
-    
-    // Animation loop
-    function animate() {
-        requestAnimationFrame(animate);
-        
-        // Rotate particles
-        particlesMesh.rotation.x += 0.001;
-        particlesMesh.rotation.y += 0.002;
-        
-        // Animate shapes
-        shapes.forEach((shape, index) => {
-            shape.rotation.x += 0.01 * (index + 1);
-            shape.rotation.y += 0.01 * (index + 1);
-            shape.position.y += Math.sin(Date.now() * 0.001 + index) * 0.001;
-        });
-        
-        renderer.render(scene, camera);
-    }
-    
-    animate();
-    
-    // Handle resize
-    window.addEventListener('resize', () => {
-        if (canvas.offsetWidth && canvas.offsetHeight) {
-            camera.aspect = canvas.offsetWidth / canvas.offsetHeight;
-            camera.updateProjectionMatrix();
-            renderer.setSize(canvas.offsetWidth, canvas.offsetHeight);
+// Vanta.js Background Animation
+function initVantaBackground() {
+    // Only load Vanta.js on desktop for performance
+    if (window.innerWidth > 768 && typeof VANTA !== 'undefined') {
+        try {
+            VANTA.WAVES({
+                el: "#vanta-bg",
+                mouseControls: true,
+                touchControls: false,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0x2a3f54,
+                shininess: 30.00,
+                waveHeight: 15.00,
+                waveSpeed: 0.75,
+                zoom: 0.75
+            });
+        } catch (error) {
+            console.log('Vanta.js not loaded, using fallback background');
         }
+    }
+}
+
+// Counter Animation for Hero Stats
+function animateHeroCounters() {
+    const counters = document.querySelectorAll('.hero-stats .stat-number[data-target]');
+    counters.forEach(counter => {
+        const target = parseInt(counter.getAttribute('data-target'));
+        const increment = target / 100;
+        let current = 0;
+        
+        const updateCounter = () => {
+            if (current < target) {
+                current += increment;
+                counter.textContent = Math.ceil(current);
+                setTimeout(updateCounter, 20);
+            } else {
+                counter.textContent = target + '+';
+            }
+        };
+        
+        // Start animation after hero loads
+        setTimeout(updateCounter, 2000);
     });
 }
 
-// Initialize Three.js when page loads
+// Initialize Vanta.js when page loads
 window.addEventListener('load', () => {
-    setTimeout(initThreeJSBackground, 100);
+    setTimeout(() => {
+        initVantaBackground();
+        animateHeroCounters();
+    }, 500);
 });
 
 // AI Assistant Functionality
@@ -421,6 +388,19 @@ aiInputField.addEventListener('focus', () => {
     hasInteracted = true;
 });
 
+// Fix chatbox initialization
+document.addEventListener('DOMContentLoaded', () => {
+    // Ensure all elements exist
+    if (!aiToggle || !aiChat || !aiClose || !aiSend || !aiInputField || !aiMessages) {
+        console.error('AI Chat elements not found');
+        return;
+    }
+    
+    // Initialize chat properly
+    aiChat.style.display = 'none';
+    aiChat.classList.remove('active');
+});
+
 // Smooth Scrolling for Navigation Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -451,15 +431,36 @@ function initPageTransitions() {
     gsap.set('body', { opacity: 0 });
     gsap.to('body', { duration: 0.6, opacity: 1, ease: 'power2.out' });
     
-    // Handle page navigation with smooth transitions
-    document.querySelectorAll('a[href$=".html"]').forEach(link => {
+    // Handle navigation links with smooth transitions
+    document.querySelectorAll('.nav-link, a[href$=".html"]').forEach(link => {
         link.addEventListener('click', (e) => {
-            e.preventDefault();
             const href = link.getAttribute('href');
             
-            gsap.to('body', {
+            // Skip if it's an anchor link or external link
+            if (href.startsWith('#') || href.startsWith('http') || href.startsWith('mailto') || href.startsWith('tel')) {
+                return;
+            }
+            
+            e.preventDefault();
+            
+            // Create transition overlay
+            const overlay = document.createElement('div');
+            overlay.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: var(--primary-color);
+                z-index: 9999;
+                opacity: 0;
+                pointer-events: none;
+            `;
+            document.body.appendChild(overlay);
+            
+            gsap.to(overlay, {
                 duration: 0.3,
-                opacity: 0,
+                opacity: 1,
                 ease: 'power2.in',
                 onComplete: () => {
                     window.location.href = href;
